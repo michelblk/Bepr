@@ -1,0 +1,30 @@
+#startmenu {
+    width: calc((150px + (2 * 10px) + (2 * 2px)) * 4);
+    margin: 0px auto;    
+}
+.startmenu {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+    border: 2px solid #0370B8;
+    border-radius: 4px;
+    margin: 10px;
+    float: left;
+    opacity: 0.85;
+}
+.startmenu:hover {
+    opacity: 1;
+}
+
+#infobox {
+    font-size: 1.15em;
+    line-height: 1.3em;
+    border: 3px solid #DF0404;
+    border-radius: 5px;
+    width: 660px;
+    margin-left: calc((100% - 676px) / 2);
+    margin-top: 50px;
+    padding: 5px;
+}

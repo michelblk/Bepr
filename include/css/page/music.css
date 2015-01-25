@@ -1,0 +1,371 @@
+header {
+    background-color: #fb8521;
+}
+#header-wrapper {
+    overflow: hidden;
+}
+#search-input {
+    text-align: center;
+    margin: 0px auto;
+    width: 435px;
+    margin-top: 20px;
+    height: 36px;
+}
+#search-box, #search-button {
+    height: 30px;
+    float: left;    
+}
+#search-box {
+    width: 395px;
+    text-align: left;
+    padding-left: 5px;
+}
+#search-button {
+    margin-top: 3px;
+}
+#search-results {
+    margin-top: 30px;
+    min-height: 100px;
+    width: calc(100% - 70px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-result-song {
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: calc((100% - (4 * 250px))/8);
+    margin-right: calc((100% - (4 * 250px))/8);
+    /*width: calc(100%/4 - 4*5px);
+    height: 200px;*/
+    width: 250px;
+    height: 250px;
+    max-width: 400px;
+    min-width: 150px;
+    /*border: 1px solid grey;*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    background-color: rgba(0,0,0,0.2);
+    line-height: 150%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative; /* So the Queue-Buttons are correct aligned */
+}
+.info {
+    background-color: rgba(0,0,0,0.5);
+    color: #F9F9F9;
+    height: 45px;
+    width: calc(100% - 7px);
+    padding-left: 7px;
+}
+.playButton {
+    background-image: url(../../image/SVG/ic_play_circle_outline_24px.svg);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+}
+.search-result-song-interpreter {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.search-result-song-title {
+    font-weight: 100;   
+}
+.search-result-song-title, .search-result-song-interpreter {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.addtoQueue{
+    float: right;
+    right: 0px;
+    bottom: 0px;
+    background: url(../../image/SVG/ic_list_24px_bg_white.svg), rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 34px;
+    width: 34px;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.addtoPlaylist{
+    float: left;
+    left: 0px;
+    bottom: 0px;
+    background: url(../../image/SVG/ic_add_24px_bg_white.svg), rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 34px;
+    width: 34px;
+    opacity: 0.5;
+    position: absolute;
+}
+
+#musicvideo {
+    z-index: 5;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    max-height: calc(100% - 50px);    /* -64px */
+    max-width: calc(100% - 100px);    /* -110px */
+    width: calc(100% - 100px);
+    top: 50px;   /* 64px */
+    left: 50px;
+    display: none;
+}
+/*#share-link-box {
+    position: fixed;
+    height: 100px;
+    background-color: white;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -50px; 
+    z-index: 6; 
+    display: none;
+    resize: none;  
+}
+#share-link-button {
+    background-image: url(../../image/SVG/link.svg);
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    position: fixed;
+    z-index: 6;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+}    */
+#interpreter.page-title {
+    display: none;
+}
+#title.page-title {
+    display: none;
+}
+
+.status {
+    display: none;
+    width: 100%;
+    background-color: #333333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    height: 64px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    overflow: hidden;
+    text-align: center;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+.status-icon {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 30px;
+    margin-right: 30px;
+    float: left;
+}
+
+
+/*---------------UPLOAD---------------*/
+#upload-warning {
+    font-size: 20px;
+    font-weight: 200;
+    width: 90%;
+    text-align: justify;
+}
+#upload-warning .bold{
+    font-weight: 300;
+}
+#new-database-entry-form {
+    width: 279px;
+    margin: 0px auto;
+    padding: 0px;
+    margin-bottom: 30px;    
+}
+#new-database-entry-form input {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    height: 24px;
+    width: 250px;
+}
+#new-database-entry-form input[type="text"] {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid grey;
+    outline: none;
+    font-size: 16px;
+}
+#new-database-entry-form input[type="text"]:focus {
+    border-bottom: 2px solid #2899F2;
+}
+#new-database-entry-form input[type="text"]:disabled {
+    border-bottom: 2px dashed #C0C0C0;
+    background-color: transparent;
+}
+#new-database-entry-form .icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 9.5px;
+    background-image: url(../../image/SVG/ic_headset_24px.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    margin-right: 5px;
+}
+#new-database-entry-form .icon#subtitle-icon{
+    background-image: url(../../image/SVG/ic_closed_caption_24px.svg);
+}
+#new-database-entry-form .icon#path-icon{
+    background-image: url(../../image/SVG/ic_cloud_download_24px.svg);
+}
+#new-database-entry-form .icon#interpreter-icon{
+    background-image: url(../../image/SVG/ic_account_child_24px.svg);
+}
+#new-database-entry-form .icon#album-icon{
+    background-image: url(../../image/SVG/ic_local_offer_24px.svg);
+}
+#new-database-entry-form .icon#cover-icon{
+    background-image: url(../../image/SVG/ic_camera_alt_24px.svg);
+}
+#new-database-entry-form #submit-button{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 5px;
+}
+#loading-bar{
+    background-color: #B3CEED;
+    height: 5px;
+    position: fixed;
+    top: 50px;   /* 64px */
+    left: 0px;
+    width: 100%;
+    display: none;
+}
+#loading-bar-status {
+    height: 100%;
+    background-color: #3F88F0;
+    width: 0px;    
+}
+
+/*-------------------------Playlists--------------------------------*/
+#playlists, #playlist {
+    display: none;
+}
+#playlists {
+    margin-top: 40px;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+#playlist {
+    margin-top: 40px;
+}
+.playlist {
+    line-height: 20px;
+    height: 240px;
+    width: 198px;
+    font-size: 1.2em; 
+    border: 1px solid #444444;
+    float: left; 
+    overflow: hidden;  
+}
+.playlist-cover{
+    height: 195px;
+    width: 195px;
+    margin: 2px;
+    background-color: #333333;
+    background-image: url(../../image/SVG/ic_my_library_music_24px_grey.svg);
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.playlist-name {
+    float: left;
+    max-width: calc(100% - 58px);    
+}
+.playlist-preview {
+    float: left;
+    max-width: 70%;    
+}
+.playlist-tracks {
+    float: right;
+    max-width: 58px;
+}
+.playlist-creator {
+    float: right;
+    max-width: 30%;
+}
+.playlist-tracks, .playlist-preview, .playlist-creator {
+    font-size: 0.7em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#new-playlist {
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    background-image: url(../../image/SVG/ic_add_24px.svg);
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #333333;
+    float: right;
+}
+.playlist-header {
+    line-height: 30px;
+    clear: both;
+    border-bottom: 1px solid #555555;
+    position: relative;
+    font-weight: 600;
+    height: 30px;
+}
+.playlist-song {
+    line-height: 30px;
+    height: 30px;
+    clear: both;
+    border-bottom: 1px solid #555555;
+    position: relative;
+}
+.playlist-header-cover {
+    width: 30px;
+    height: 30px;
+    float: left;    
+}
+.playlist-song-cover {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #333333;
+    background-image: url(../../image/SVG/ic_my_library_music_24px_grey.svg);
+    background-size: 10px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.playlist-song-title, .playlist-header-title {
+    float: left;
+    padding-left: 20px;
+    width: calc(50% - 30px);
+}
+.playlist-song-title {
+    cursor: pointer;
+}
+.playlist-song-interpreter, .playlist-header-interpreter {
+    position: absolute;
+    max-width: 20%;
+    text-align: left;
+    left: 55%;
+}
+.playlist-song-album,.playlist-header-album {
+    position: absolute;
+    left: 80%;
+}

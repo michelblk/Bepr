@@ -1,0 +1,23 @@
+header {
+    background-color: #9ACD32;
+}
+#presentations {
+    
+}
+.presentation {
+    border : 1px solid #333333;
+    height: 75px;   
+}
+.presentation:before {
+    content: '';
+    background-image: url(../../image/SVG/ic_school_24px.svg);
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-right: 10px;
+}
+.presentation-name {
+    line-height: 75px;
+    font-size: 1.5em;   
+}

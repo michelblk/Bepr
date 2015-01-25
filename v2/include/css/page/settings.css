@@ -1,0 +1,10 @@
+#infobox {
+    font-size: 1.15em;
+    line-height: 1.3em;
+    border: 3px solid #DF0404;
+    border-radius: 5px;
+    width: 700px;
+    margin-left: calc((100% - 700px) / 2);
+    margin-top: 50px;
+    padding: 5px;
+}

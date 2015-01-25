@@ -1,0 +1,9 @@
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>No Video</title>
+  <g id="svg_1">
+   <path id="svg_2" d="m45,9h-42v30h42v-30l0,0zm-23,28v-4h4v4h-4l0,0zm8,0v-4h4v4h-4l0,0zm8,0v-4h4v4h-4l0,0zm-24,0v-4h4v4h-4l0,0zm-8,0v-4h4v4h-4l0,0zm16,-22v-4h4v4h-4l0,0zm8,0v-4h4v4h-4l0,0zm8,0v-4h4v4h-4l0,0zm-24,0v-4h4v4h-4l0,0zm-8,0v-4h4v4h-4l0,0z" fill="white"/>
+  </g>
+  <line fill="none" stroke="red" stroke-width="5" stroke-linejoin="null" stroke-linecap="null" x1="2.5" y1="8" x2="45.5" y2="38"/>
+ </g>
+</svg>

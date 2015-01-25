@@ -1,0 +1,226 @@
+/* http://tympanus.net/Tutorials/GoogleNexusWebsiteMenu/ */
+
+body {
+    font-family: 'Roboto', Arial;
+    /* //fonts.googleapis.com/css?family=Roboto:100italic,100,300italic,300,400italic,400,500italic,500,700italic,700,900italic,900 */
+    margin: 0px;
+    background-color: rgba(0,0,0,0.05); /* #34495e */
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#menu-main {
+    z-index: 50;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.85);
+    color: #FFFFFF;
+    list-style: none;
+    text-transform: none;
+    font-weight: 300;
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 13px;
+    line-height: 60px;
+    /*border-bottom: 1px solid #c6d0da;*/
+}
+
+#menu-main > li {
+    display: block;
+    float: left;
+    height: 100%;
+    border-right: 1px solid #c6d0da;
+    text-align: center;
+}
+
+#menu-main > li > a {
+    padding: 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+#menu-main a {
+    display: block;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu-main a:hover {
+    background: rgba(0,0,0,0.75);
+}
+
+#menu-trigger-icon:before {
+    margin-left: -15px;
+    margin-right: -15px;
+    vertical-align: -2px;
+    width: 30px;
+    height: 3px;
+    background: white;
+    box-shadow: 0 3px transparent, 0 -6px white, 0 -9px transparent, 0 -12px white;
+    content: '';
+    display: inline-block;
+    line-height: 1;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+#menu-trigger-icon:hover:before {
+    background: white;
+    box-shadow: 0 3px transparent, 0 -6px white, 0 -9px transparent, 0 -12px white;
+}
+
+/*#menu-trigger-icon:hover ~ #menu-wrapper {
+    webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+} ----JS----*/
+
+nav, #menu-wrapper {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 60px;
+  border-top: 1px solid #c6d0da;
+  background: rgba(0,0,0,0.85);  /*0.65*/
+  webkit-transform: translateX(-60px);
+  -moz-transform: translateX(-60px);
+  transform: translateX(-60px);
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s;
+  -moz-transition: -moz-transform 0.3s, width 0.3s;
+  transition: transform 0.3s, width 0.3s;
+  display: block;
+  z-index: 501;
+}
+
+.menu-icon:before {
+    width: 60px;
+    height: 1.22em;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.menu-home-icon:before {
+    background-image: url("../image/svg/menu/home.svg");
+}
+
+.menu-music-icon:before {
+    background-image: url("../image/svg/menu/headset.svg");
+}
+.menu-music-new-icon:before {
+    background-image: url("../image/svg/menu/eyeson.svg");
+}
+.menu-music-all-icon:before {
+    background-image: url("../image/svg/menu/search.svg");
+}
+.menu-music-playlists-icon:before {
+    background-image: url("../image/svg/menu/playlists.svg");
+}
+.menu-music-suggest-icon:before {
+    background-image: url("../image/svg/menu/thumbsup.svg");
+}
+.menu-houseautomation-icon:before {
+    background-image: url("../image/svg/menu/house-automation.svg");
+}
+.menu-settings-icon:before {
+    background-image: url("../image/svg/menu/settings.svg");
+}
+.menu-logout-icon:before {
+    background-image: url("../image/svg/menu/logout.svg");
+}
+
+#menu a {
+    border-bottom: 1px solid rgb(198,208,218);
+}
+
+#menu, .submenu {
+    margin: 0;
+  padding: 0;
+
+  color: #5f6f81;
+  list-style: none;
+  text-transform: none;
+  font-weight: 300;
+  font-family: 'Lato', Arial, sans-serif;
+  line-height: 60px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.submenu {
+    display: none;
+    padding-left: 30px;
+    margin-right: -30px;
+    border-bottom: 1px solid rgb(198,208,218);
+}
+.submenu a {
+    border-left: 1px solid rgb(198,208,218);
+}
+
+.fast-submenu-switch {
+    padding: 0px 10px !important;
+}
+.fast-submenu-switch:before {
+    padding: 0px !important;
+    width: 30px;
+}
+
+#menu-scroller {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 340px;
+    height: 100%;
+}
+
+#menu-scroller::-webkit-scrollbar {
+    width: 6px;
+}
+#menu-scroller::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.28);
+}
+#menu-scroller::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.5);
+}
+#menu-scroller::-webkit-scrollbar-thumb:active {
+    background-color: rgba(255,255,255,.6);
+}
+
+.adminOnly {
+    display: none !important;
+}
+
+main {
+    margin-top: 60px;
+}
+
+#wrapper {
+
+}
+
+/*-------------------------------------------------------------------------*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,.08);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.3);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,0,0,.5);
+}

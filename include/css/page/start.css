@@ -1,0 +1,47 @@
+#wrapper .box {
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26); 
+    border: 1px solid grey;
+    min-height: 200px;
+    float: left;
+    /*width: 300px; /* Fallback */
+    width: calc((100% - 66px) / 3);
+    margin: 10px; 
+    max-height: 300px;
+    overflow: auto; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#wrapper #music-spotlight {
+    background-size: cover;
+}
+#wrapper #news-wrapper {
+    margin: 0px auto;
+    max-width: 966px;
+}
+#wrapper #news-wrapper #music-news {
+    overflow: hidden;  
+}
+#wrapper #news-wrapper #music-news .music-news-song {
+    clear: both;
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+.music-news-song-interpreter, .music-news-song-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.music-news-song-interpreter {
+    float: left;
+    font-weight: 300;
+    font-size: 1.2em;
+    max-width: 40%;
+}
+.music-news-song-title {
+    float: right;
+    font-weight: 100;
+    font-size: 1.1em;
+    max-width: 60%;
+}
